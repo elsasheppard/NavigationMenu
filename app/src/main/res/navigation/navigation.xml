@@ -27,4 +27,18 @@
         android:name="com.example.navigation.BlankFragment"
         android:label="fragment_blank"
         tools:layout="@layout/fragment_blank" />
+    <fragment
+        android:id="@+id/thirdFragment"
+        android:name="com.example.navigation.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" >
+        <action
+            android:id="@+id/action_aboutFragment_to_titleFragment"
+            app:destination="@id/titleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.navigation.aboutFragment2"
+        android:label="fragment_about2"
+        tools:layout="@layout/fragment_about2" />
 </navigation>
