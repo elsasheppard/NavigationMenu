@@ -5,6 +5,7 @@ import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
+import kotlinx.android.synthetic.main.fragment_title.view.*
 
 
 /**
@@ -29,7 +30,7 @@ class TitleFragment : Fragment() {
         val rootView = inflater.inflate(R.layout.fragment_title, container, false)
 
         // manipulate all the widgets here in between inflating and returning
-        rootView.button_titleFragment_navTest.setonClickListener { view : View ->
+        rootView.button_titleFragment_navTest.setOnClickListener { view : View ->
             if(Math.random() < .5) {
                 view.findNavController().navigate(R.id.action_titleFragment_to_secondFragment)
             } else {
